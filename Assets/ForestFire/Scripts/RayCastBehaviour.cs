@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RaycastBehaviour : MonoBehaviour
 {
-
     public Transform raycastOrigin;
 
     public LayerMask layerMask;
@@ -21,11 +20,11 @@ public class RaycastBehaviour : MonoBehaviour
 
     private void AdvancedRaycast()
     {
-        Debug.DrawRay(transform.position, transform.forward * 3f, Color.magenta);
+        Debug.DrawRay(transform.position, transform.forward * 6f, Color.magenta);
 
         RaycastHit hit;
 
-        if (Physics.Raycast(raycastOrigin.position,transform.forward, out hit, 3f,layerMask));
+        if (Physics.Raycast(raycastOrigin.position, transform.forward, out hit, 6f, layerMask)) 
         {
             Debug.Log("Raycast Interaction");
         }

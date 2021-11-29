@@ -1100,6 +1100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428188605}
   - component: {fileID: 1428188606}
+  - component: {fileID: 1428188607}
   m_Layer: 0
   m_Name: RayCast
   m_TagString: Untagged
@@ -1122,6 +1123,22 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1428188606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428188604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastOrigin: {fileID: 1428188605}
+  layerMask:
+    m_Bits: 4294967295
+  hitSpawnObject: {fileID: 0}
+--- !u!114 &1428188607
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
