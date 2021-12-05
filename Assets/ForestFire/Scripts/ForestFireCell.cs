@@ -18,6 +18,7 @@ public class ForestFireCell : MonoBehaviour
         House,
         Alight,
         Burnt,
+        Player,
     }
 
     public int cellFuel; // integer to store the amount of fuel in the cell
