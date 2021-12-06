@@ -259,8 +259,6 @@ GameObject:
   - component: {fileID: 323314424}
   - component: {fileID: 323314423}
   - component: {fileID: 323314422}
-  - component: {fileID: 323314427}
-  - component: {fileID: 323314426}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -457,36 +455,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
---- !u!54 &323314426
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323314416}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 84
-  m_CollisionDetection: 0
---- !u!136 &323314427
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323314416}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.98
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &731303985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1250,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428188605}
-  - component: {fileID: 1428188606}
   - component: {fileID: 1428188607}
   m_Layer: 3
   m_Name: RayCast
@@ -1305,18 +1272,6 @@ Transform:
   m_Father: {fileID: 960606097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1428188606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428188604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1428188607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,6 +1838,8 @@ GameObject:
   - component: {fileID: 1820464976}
   - component: {fileID: 1820464975}
   - component: {fileID: 1820464979}
+  - component: {fileID: 1820464981}
+  - component: {fileID: 1820464980}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2034,6 +1991,36 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!54 &1820464980
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820464974}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &1820464981
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820464974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1831720039
 PrefabInstance:
   m_ObjectHideFlags: 0

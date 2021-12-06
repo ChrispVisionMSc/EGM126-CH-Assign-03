@@ -18,6 +18,9 @@ public class ForestFire3D : MonoBehaviour
 
     public GameObject cellPrefab; // gameobject prefab used to represent a cell on the grid   
 
+
+    public ForestFireCell playerCell; // ForestFireCell object to monitor collisions by the player
+
     public ForestFireCell[,] forestFireCells = new ForestFireCell[0, 0]; // array of ForestFireCell objects
     public ForestFireCell.State[,] forestFireCellsNextGenStates = new ForestFireCell.State[0,0]; // array of cell states to be used in the next generation of the game 
 

@@ -79,6 +79,13 @@ public class MiniMap : MonoBehaviour
                 {
                     Debug.LogError("objectArray is not 0, 1 or 2, check code for errors");
                 }
+
+                //Method to signify player position on minimap
+                //compares coordinate of triggered playerCell with forestFire3D cell and if equivelent chnage colour of sprite
+                if(forestFire3D.playerCell == forestFire3D.forestFireCells[xCount, yCount])
+                {
+                    cellSpriteRenderers[xCount, yCount].color = Color.magenta;
+                }
             }
         }
     }
