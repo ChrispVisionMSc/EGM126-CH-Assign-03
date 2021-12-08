@@ -25,7 +25,7 @@ public class RaycastBehaviour : MonoBehaviour
         {
             // Deactivates any game object hit by the Raycast (use with layers to limit
             //deactivation to desired objects)
-            hit.transform.gameObject.SetActive(false);
+            //hit.transform.gameObject.SetActive(false);
             
             Debug.Log("Raycast Interaction");
         }

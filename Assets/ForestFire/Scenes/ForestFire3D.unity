@@ -240,6 +240,7 @@ MonoBehaviour:
   grassChance: 40
   cellPrefab: {fileID: 8517016399536926406, guid: bd5b6afb2ea580946a81c949556e036e,
     type: 3}
+  playerCell: {fileID: 0}
   gameRunning: 0
   updateRate: 1
 --- !u!1 &323314416
@@ -1257,7 +1258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1428188605
 Transform:
   m_ObjectHideFlags: 0

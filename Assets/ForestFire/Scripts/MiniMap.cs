@@ -81,7 +81,7 @@ public class MiniMap : MonoBehaviour
                 }
 
                 //Method to signify player position on minimap
-                //compares coordinate of triggered playerCell with forestFire3D cell and if equivelent chnage colour of sprite
+                //compares coordinate of triggered playerCell with forestFire3D cell and if equivelent change colour of sprite
                 if(forestFire3D.playerCell == forestFire3D.forestFireCells[xCount, yCount])
                 {
                     cellSpriteRenderers[xCount, yCount].color = Color.magenta;
