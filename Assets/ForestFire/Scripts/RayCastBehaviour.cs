@@ -23,9 +23,10 @@ public class RaycastBehaviour : MonoBehaviour
 
         if (Physics.Raycast(raycastOrigin.position, transform.forward, out hit, 6f, layerMask)) 
         {
-            // Deactivates any game object hit by the Raycast (use with layers to limit
-            //deactivation to desired objects)
+            // Deactivates any game object hit by the Raycast (use with layers to limit deactivation to desired objects)
             //hit.transform.gameObject.SetActive(false);
+            
+            //forestFireCellsNextGenStates[xCount, yCount] = ForestFireCell.State.Burnt;
             
             Debug.Log("Raycast Interaction");
         }

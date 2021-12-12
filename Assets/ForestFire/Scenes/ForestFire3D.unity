@@ -236,8 +236,8 @@ MonoBehaviour:
   nlight: 5
   xC: 0
   yC: 0
-  rockChance: 10
-  grassChance: 40
+  rockChance: 20
+  grassChance: 60
   cellPrefab: {fileID: 8517016399536926406, guid: bd5b6afb2ea580946a81c949556e036e,
     type: 3}
   playerCell: {fileID: 0}
