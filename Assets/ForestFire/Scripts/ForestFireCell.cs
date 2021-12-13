@@ -140,7 +140,6 @@ public class ForestFireCell : MonoBehaviour
         // this code below wont run once the house material has been set
         ResetCell();
         cellState = State.House;
-        cellFuel = 0;
         groundMeshRenderer.material = groundMaterialHouse; // sets the cell material to house
         houseObject.SetActive(true);
     }
@@ -183,6 +182,15 @@ public class ForestFireCell : MonoBehaviour
         // if there are leaves active in the hierarchy of this cell, disable them as if they have been burnt 
         if (treeObject.activeInHierarchy)
             leaves.SetActive(false);
+
+
+        // adaptation to make house dissapear & set of new VFX
+        if (houseObject.activeInHierarchy)
+        {
+            //Put Explosion VFX here
+            //Create new reference to VFX object and set active.
+            houseObject.SetActive(false);
+        }
 
         cellState = State.Burnt;
         groundMeshRenderer.material = groundMaterialBurnt;

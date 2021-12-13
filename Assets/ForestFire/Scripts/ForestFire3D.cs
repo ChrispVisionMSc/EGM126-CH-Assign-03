@@ -158,6 +158,7 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[31, 20].SetGrass();
         forestFireCells[31, 21].SetHouse();
+        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
         forestFireCells[31, 22].SetGrass();
 
         forestFireCells[32, 20].SetGrass();
@@ -171,6 +172,8 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[16, 28].SetGrass();
         forestFireCells[16, 29].SetHouse();
+        //This sets fuel level for house cell
+        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
         forestFireCells[16, 30].SetGrass();
 
         forestFireCells[17, 28].SetGrass();
@@ -184,6 +187,7 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[09, 08].SetGrass();
         forestFireCells[09, 09].SetHouse();
+        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
         forestFireCells[09, 10].SetGrass();
 
         forestFireCells[10, 08].SetGrass();

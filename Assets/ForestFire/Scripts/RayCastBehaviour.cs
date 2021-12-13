@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class RaycastBehaviour : MonoBehaviour
+public class RayCastBehaviour : MonoBehaviour
 {
     public Transform raycastOrigin;
     public LayerMask layerMask;
-    public GameObject treeCollider;
 
+    //Reference to an action to assign to a controller button
+    public InputActionReference RaycastTrigger;
 
     // Update is called once per frame
     void Update()
     {
-        AdvancedRaycast();
+        //looks at input from controller trigger (change name from raycasttrigger to RightHandTrigger)
+        if (RaycastTrigger.action.ReadValue<float>() > 0.5f)
+        {
+            //maybe add delay here for 1 second to allow raybeam effect etc
+            AdvancedRaycast();
+        }
+        
+
+
     }
 
     private void AdvancedRaycast()
@@ -25,9 +35,11 @@ public class RaycastBehaviour : MonoBehaviour
         {
             // Deactivates any game object hit by the Raycast (use with layers to limit deactivation to desired objects)
             //hit.transform.gameObject.SetActive(false);
-            
+            hit.transform.gameObject.GetComponent<RaycastTarget>().forestFireCell.SetBurnt();
+
+
             //forestFireCellsNextGenStates[xCount, yCount] = ForestFireCell.State.Burnt;
-            
+
             Debug.Log("Raycast Interaction");
         }
     }

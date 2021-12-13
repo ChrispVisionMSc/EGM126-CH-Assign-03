@@ -75,9 +75,19 @@ public class MiniMap : MonoBehaviour
                 {
                     cellSpriteRenderers[xCount, yCount].color = Color.green;
                 }
+                else if (forestFire3D.forestFireCells[xCount, yCount].cellState == ForestFireCell.State.House)
+                {
+                    cellSpriteRenderers[xCount, yCount].color = Color.blue;
+                }
                 else // something has gone wrong, display an error message
                 {
-                    Debug.LogError("objectArray is not 0, 1 or 2, check code for errors");
+                                       
+                    /*Debug.LogError(forestFire3D.forestFireCells[xCount, yCount].cellState);
+                    Debug.LogError(forestFire3D.cellGameObjects[xCount, yCount].gameObject.name);
+
+                    Debug.LogError(xCount + yCount);
+
+                    Debug.Break();*/
                 }
 
                 //Method to signify player position on minimap

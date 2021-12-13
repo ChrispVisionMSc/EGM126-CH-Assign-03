@@ -1251,8 +1251,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428188605}
-  - component: {fileID: 1428188607}
-  m_Layer: 3
+  - component: {fileID: 1428188606}
+  m_Layer: 0
   m_Name: RayCast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1273,7 +1273,7 @@ Transform:
   m_Father: {fileID: 960606097}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1428188607
+--- !u!114 &1428188606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1285,11 +1285,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb954136a73fa3e4b925f1aaefd8e028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastOrigin: {fileID: 1428188605}
+  raycastOrigin: {fileID: 1204480277}
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  treeCollider: {fileID: 0}
+    m_Bits: 1032
+  RaycastTrigger: {fileID: 1315203834581107414, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1 &1480951794
 GameObject:
   m_ObjectHideFlags: 0
