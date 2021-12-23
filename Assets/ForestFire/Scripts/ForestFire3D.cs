@@ -20,7 +20,7 @@ public class ForestFire3D : MonoBehaviour
 
 
     public ForestFireCell playerCell; 
-    // ForestFireCell object derived from ForestFireCell script / class
+    // 503403 ForestFireCell object derived from ForestFireCell script / class
     // to monitor collisions by the player
 
 
@@ -151,43 +151,42 @@ public class ForestFire3D : MonoBehaviour
         // set the middle cell as grass which is where the player is placed
         forestFireCells[20, 20].SetGrass();
 
-        //set a house in 3x3 grass clearing
+        //set a house in 3x3 grass clearing with fuel load of 45
         forestFireCells[30, 20].SetGrass();
         forestFireCells[30, 21].SetGrass();
         forestFireCells[30, 22].SetGrass();
 
         forestFireCells[31, 20].SetGrass();
         forestFireCells[31, 21].SetHouse();
-        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
+        forestFireCells[31, 21].cellFuel = 45;
         forestFireCells[31, 22].SetGrass();
 
         forestFireCells[32, 20].SetGrass();
         forestFireCells[32, 21].SetGrass();
         forestFireCells[32, 22].SetGrass();
 
-        //set a house in 3x3 grass clearing
+        //set a house in 3x3 grass clearing with fuel load of 45
         forestFireCells[15, 28].SetGrass();
         forestFireCells[15, 29].SetGrass();
         forestFireCells[15, 30].SetGrass();
 
         forestFireCells[16, 28].SetGrass();
         forestFireCells[16, 29].SetHouse();
-        //This sets fuel level for house cell
-        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
+        forestFireCells[16, 29].cellFuel = 45;
         forestFireCells[16, 30].SetGrass();
 
         forestFireCells[17, 28].SetGrass();
         forestFireCells[17, 29].SetGrass();
         forestFireCells[17, 30].SetGrass();
 
-        //set a house in 3x3 grass clearing
+        //set a house in 3x3 grass clearing with fuel load of 45
         forestFireCells[08, 08].SetGrass();
         forestFireCells[08, 09].SetGrass();
         forestFireCells[08, 10].SetGrass();
 
         forestFireCells[09, 08].SetGrass();
         forestFireCells[09, 09].SetHouse();
-        forestFireCells[31, 21].cellFuel = UnityEngine.Random.Range(30, 50);
+        forestFireCells[09, 09].cellFuel = 45;
         forestFireCells[09, 10].SetGrass();
 
         forestFireCells[10, 08].SetGrass();

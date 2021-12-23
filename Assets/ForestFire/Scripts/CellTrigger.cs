@@ -5,11 +5,12 @@ using UnityEngine;
 public class CellTrigger : MonoBehaviour
 {
     
-    //This script is attached to a collider object that is a child of the ForestFireCell prefab.
-    //The purpose of the script is to note the position of a triggered cell in the grid and then pass
-    //the coordinate
+    //503403 This script is attached to a collider object that is a child of the ForestFireCell prefab.
+    //The purpose of the script is to note the position of a triggered cell in the grid so the MiniMap script-
+    //can change the colour of the cellSpriteRenderer at that coordinate to magenta inticating player position
+    //on the map
     
-    public ForestFire3D forestFire3D; // Reference to forestFire3D objects derived from ForestFire3D script/class
+    public ForestFire3D forestFire3D; // 503403 Reference to forestFire3D objects derived from ForestFire3D script/class
 
     private void Start()
     {

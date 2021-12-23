@@ -15,7 +15,7 @@ public class ForestFireCell : MonoBehaviour
         Tree,
         Grass,
         Rock,
-        House,
+        House,//503403 new enum to describe house cell state
         Alight,
         Burnt,
     }
@@ -27,13 +27,13 @@ public class ForestFireCell : MonoBehaviour
     public Material groundMaterialGrass;
     public Material groundMaterialRock;
     public Material groundMaterialTree;
-    public Material groundMaterialHouse;
+    public Material groundMaterialHouse;//503403 new public material to reference 'groundMaterial for hose cell prefab
     private MeshRenderer groundMeshRenderer; // reference to this cell's mesh renderer, used when changing material
 
     public GameObject treeObject; // reference to tree visual object
     public GameObject leaves; // reference to leaves visual object
     public GameObject rockObject; // reference to rock visual object
-    public GameObject houseObject;// reference to house visual object
+    public GameObject houseObject;// 503403 reference to house visual object
 
     public GameObject treeFireFVX; // reference to tree fire vfx
     public GameObject grassFireFVX; // reference to grass fire vfx
@@ -132,6 +132,8 @@ public class ForestFireCell : MonoBehaviour
         rockObject.SetActive(true); 
     }
 
+
+    //503403 Function to set properties of 'House cell' on instantiation of ForestFireCell prefab
     public void SetHouse()
     {
         if (groundMeshRenderer.sharedMaterial == groundMaterialHouse)
@@ -184,7 +186,7 @@ public class ForestFireCell : MonoBehaviour
             leaves.SetActive(false);
 
 
-        // adaptation to make house dissapear & set of new VFX
+        // 503403 adaptation to make house dissapear & set off new VFX
         if (houseObject.activeInHierarchy)
         {
             //Put Explosion VFX here

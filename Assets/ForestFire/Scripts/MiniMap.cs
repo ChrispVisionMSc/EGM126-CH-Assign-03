@@ -7,7 +7,7 @@ using UnityEngine;
 // the state of each cell updated in the Update function via a reference to the ForestFire3D object
 public class MiniMap : MonoBehaviour
 {
-    public ForestFire3D forestFire3D; // reference to the main forest fire 3D script
+    public ForestFire3D forestFire3D; // 503403 reference to the main forest fire 3D script
 
     public GameObject cellSprite; // sprite used to represent a cell on the grid
 
@@ -75,6 +75,8 @@ public class MiniMap : MonoBehaviour
                 {
                     cellSpriteRenderers[xCount, yCount].color = Color.green;
                 }
+
+                //503403 Statement to indicate position of houses on MiniMap with blue cell.
                 else if (forestFire3D.forestFireCells[xCount, yCount].cellState == ForestFireCell.State.House)
                 {
                     cellSpriteRenderers[xCount, yCount].color = Color.blue;
@@ -90,9 +92,9 @@ public class MiniMap : MonoBehaviour
                     Debug.Break();*/
                 }
 
-                //Method to signify player position on minimap
-                //compares coordinate of triggered playerCell with forestFire3D cell and if equivelent change colour of sprite
-                if(forestFire3D.playerCell == forestFire3D.forestFireCells[xCount, yCount])
+                //503403 Satement to signify player position on minimap compares coordinate of forestFire3D cell with coordinate of triggered playerCell
+                //and if equivelent changes colour of sprite
+                if (forestFire3D.forestFireCells[xCount, yCount] == forestFire3D.playerCell)
                 {
                     cellSpriteRenderers[xCount, yCount].color = Color.magenta;
                 }
