@@ -37,6 +37,7 @@ public class ForestFireCell : MonoBehaviour
 
     public GameObject treeFireFVX; // reference to tree fire vfx
     public GameObject grassFireFVX; // reference to grass fire vfx
+    public GameObject explosionVFX; //503403 ref to explosion VFX
 
     public GameObject currentFire; // if the cell is on fire, the reference to the fire vfx is stored here
     public GameObject playerCamera; // reference to player camera
@@ -144,6 +145,7 @@ public class ForestFireCell : MonoBehaviour
         cellState = State.House;
         groundMeshRenderer.material = groundMaterialHouse; // sets the cell material to house
         houseObject.SetActive(true);
+        explosionVFX.SetActive(false);//Explosion set to inactive when house is created
     }
 
     // set cell alight
@@ -191,10 +193,24 @@ public class ForestFireCell : MonoBehaviour
         {
             //Put Explosion VFX here
             //Create new reference to VFX object and set active.
-            houseObject.SetActive(false);
+            
+            explosionVFX.SetActive(true);
+
+            //Turns off visibility of house to show explosion
+            houseObject.GetComponent<MeshRenderer>().enabled = false;
+
         }
 
         cellState = State.Burnt;
+        cellFuel = 0;//503403 Fuel Level set to zero to eradicate any unused fuel
         groundMeshRenderer.material = groundMaterialBurnt;
     }
+
+
+
+
+
+
+
+
 }

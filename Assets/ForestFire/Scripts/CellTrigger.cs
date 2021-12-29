@@ -14,7 +14,7 @@ public class CellTrigger : MonoBehaviour
 
     private void Start()
     {
-        forestFire3D = FindObjectOfType<ForestFire3D>(); //
+        forestFire3D = FindObjectOfType<ForestFire3D>();
     }
 
     private void OnTriggerEnter(Collider other)

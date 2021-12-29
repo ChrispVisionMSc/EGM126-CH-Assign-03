@@ -158,7 +158,7 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[31, 20].SetGrass();
         forestFireCells[31, 21].SetHouse();
-        forestFireCells[31, 21].cellFuel = 45;
+        forestFireCells[31, 21].cellFuel = 25;
         forestFireCells[31, 22].SetGrass();
 
         forestFireCells[32, 20].SetGrass();
@@ -172,7 +172,7 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[16, 28].SetGrass();
         forestFireCells[16, 29].SetHouse();
-        forestFireCells[16, 29].cellFuel = 45;
+        forestFireCells[16, 29].cellFuel = 25;
         forestFireCells[16, 30].SetGrass();
 
         forestFireCells[17, 28].SetGrass();
@@ -186,7 +186,7 @@ public class ForestFire3D : MonoBehaviour
 
         forestFireCells[09, 08].SetGrass();
         forestFireCells[09, 09].SetHouse();
-        forestFireCells[09, 09].cellFuel = 45;
+        forestFireCells[09, 09].cellFuel = 25;
         forestFireCells[09, 10].SetGrass();
 
         forestFireCells[10, 08].SetGrass();
